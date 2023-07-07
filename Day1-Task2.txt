@@ -1,0 +1,80 @@
+
+       Write a blog about objects and its internal representation in Java Script.
+
+
+Objects, in JavaScript, are the most important data-type and forms the building blocks for 
+modern JavaScript. These objects are quite different from JavaScript’s primitive data-types 
+(BBUSSNN - Boolean, Bigint, Undefined, Symbol, String, Null and Number) in the sense that 
+while these primitive data-types all store a single value depending on their types. Along with 
+that, objects are more complex and each object may contain any combination of these primitive 
+as well as reference data-types. An object can be created with curly brackets {…} with an 
+optional list of properties. A property is a “key: value” pair, where a key is a string 
+(also called a “property name”), and the value can be anything.
+
+
+                                 JavaScript Object Properties:
+
+
+A JavaScript object has properties associated with it. The property names can be strings or 
+numbers. In case the property names are numbers, they must be accessed using the “bracket 
+notation” like this:
+
+let school = {
+name: 'Saraswati Vidyalaya',
+location : 'Mumbai',
+established : '1971',
+};
+
+console.log(school.name);             //// Saraswati Vidyalaya
+console.log(typeof (school));         //// Object
+
+
+We can easily access the properties of an object with a simple dot-notation:- 
+objectName.propertyName
+
+Like all JavaScript variables, both the object name (which could be a normal variable) and 
+property name are case sensitive. You can define a property by assigning it a value. In 
+JavaScript, objects have an internal property known as Prototype. You can also see that there 
+is a scopes inside of these double brackets.
+
+
+                                 Creating Objects In Java Script
+
+
+1. Create JavaScript Object with Object Literal:
+
+One of the easiest way to create a javascript object is object literal, simply define the 
+property and values inside curly braces.
+
+eg:- let bike = {name: 'SuperSport', maker:'Ducati', engine:'937cc'};
+
+
+2.	Create JavaScript Object with Constructor:
+
+Constructor is nothing but a function and with help of new keyword, constructor function allows
+to create multiple objects of same flavor.
+
+eg:- function Vehicle(name, maker) {
+     this.name = name;
+     this.maker = maker;
+    }
+
+    let car1 = new Vehicle('Fiesta', 'Ford');
+    let car2 = new Vehicle('Santa Fe', 'Hyundai');
+    console.log(car1.name);    /// Fiesta
+    console.log(car2.name);    /// Santa Fe
+
+
+3.	Using the JavaScript Keyword new:
+
+New keyword in JavaScript is used to create an instance of an object that has a constructor 
+function. On calling constructor function with 'new' operator, a new empty object is created.
+
+eg:- var person = new Object();
+
+
+4.	Using the Object.create method:
+
+Objects can also be created using the Object.create() method. This method can be very useful, 
+because it allows you to choose the prototype object for the object you want to create, without 
+having to define a constructor function.

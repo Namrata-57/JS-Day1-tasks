@@ -1,0 +1,40 @@
+	
+
+                   Write a blog on Difference between HTTP 1.1 vs HTTP 2
+
+
+In 1989, HTTP was discovered by Tim Berners-Lee. HTTP stands for hypertext transfer protocol & 
+it is used in client-server communication. By using HTTP user sends the request to the server 
+and the server sends the response back to the user. For instance, browsing on website such as 
+Google Chrome, Firefox, etc. HTTP 1.1 was its 1st standardized version that was available for 
+use in the year 1997. But it has been observed that http 1.1 has many loopholes, poor response
+time. Hence, to make it more efficient and reliable, HTTP 2 has came with efficiency, speed and 
+security. 
+
+
+                        DIFFERENCE BETWEEN HTTP 1.1 V/S HTTP 2
+
+
+             HTTP 1.1                                            HTTP 2
+
+
+a. HTTP 1.1 works on the textual format.          a. HTTP 2 works on the binary protocol.
+
+b. HTTP 1.1 loads resources one after the         b. HTTP 2 is able to use a single TCP 
+   other, so if one resource cannot be               connection to send multiple streams of 
+   loaded, it blocks all the other resources         data at once so that no resource blocks 
+   behind it.                                        any other resources.
+
+c. HTTP 1.1 uses request resource in-lining       c. To avoid a server receiving lots of 
+   for use in getting multiple pages.                requests, HTTP 2 introduced a server push 
+                                                     functionality. With that, the server tries 
+                                                     to predict the resources that will be 
+                                                     requested soon.
+
+d. HTTP 1.1 compresses data by itself.            d. HTTP 2 uses a more advanced compression 
+                                                     method called HPACK that eliminates 
+                                                     unnecessary information in HTTP header 
+                                                     packets.                                      
+
+e. HTTP 1.1’s functionality is quite slower       e. HTTP 2 processes faster than HTTP 1.1.
+   than compared to new version HTTP 2.
